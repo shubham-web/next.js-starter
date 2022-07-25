@@ -1,6 +1,7 @@
 // These values are mostly used in meta tags
 const config = {
-	siteTitle: "MyApp",
+	siteTitle: "My App",
+	shortName: "MyApp",
 	description: "MyApp does something cool.",
 	author: "John Doe",
 	domain: "https://example.com/",

@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     :root{
         --color-primary: ${theme.colors.primary};
         --color-secondary: ${theme.colors.secondary};
+        --font-main: ${theme.font.main}, ${theme.font.fallBacks};
     }
     * {
         box-sizing: border-box;
@@ -30,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         padding: 0;
         margin: 0;
-        font-family: ${theme.font.main}, ${theme.font.fallBacks};
+        font-family: var(--font-main);
     }
 
     a {
@@ -38,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-    h1,h2,h3,h4,h5,h6{
+    h1,h2,h3,h4,h5,h6,p{
         margin: 0;
     }
 `;

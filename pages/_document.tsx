@@ -6,9 +6,11 @@ export default function Document() {
 		<Html lang="en">
 			<Head>
 				{/* Primary Tags */}
-				<meta charSet="utf-8" />
 				<link rel="icon" href="/favicon.ico" />
-				<link rel="manifest" href="/manifest.json" />
+
+				{/* Manifest.json is prepared dynamically based on values in config/index.ts */}
+				<link rel="manifest" href="/api/manifest.json" />
+				<meta charSet="utf-8" />
 				<meta name="title" content={siteTitle} />
 				<meta name="description" content={description} />
 				<meta name="author" content={author} />

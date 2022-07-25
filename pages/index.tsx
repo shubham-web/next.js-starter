@@ -12,10 +12,10 @@ const Home: NextPage = () => {
 				<Heading>You&apos;re Almost Done!</Heading>
 				<Steps>
 					<Step>
-						Edit <FilePath>data/config.ts</FilePath> to set app name and meta data.
+						Edit <FilePath>config/index.ts</FilePath> to set app name and meta data.
 					</Step>
 					<Step>
-						Edit <FilePath>data/theme.ts</FilePath> to set color, fonts, etc.
+						Edit <FilePath>config/theme.ts</FilePath> to set color, fonts, etc.
 					</Step>
 					<Step>Start Coding! 👨‍💻</Step>
 				</Steps>
