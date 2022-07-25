@@ -3,16 +3,17 @@ import Head from "next/head";
 import config from "../config";
 import theme from "../config/theme";
 import { createGlobalStyle } from "styled-components";
+import { DataProvider } from "../data";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<>
+		<DataProvider>
 			<Head>
 				<title>{config.siteTitle}</title>
 			</Head>
 			<GlobalStyle />
 			<Component {...pageProps} />
-		</>
+		</DataProvider>
 	);
 }
 
