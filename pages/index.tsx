@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styled from "styled-components";
+import FilePath from "../components/FilePath";
+import NextLink from "next/link";
 
 const Home: NextPage = () => {
 	return (
@@ -19,6 +21,7 @@ const Home: NextPage = () => {
 					</Step>
 					<Step>Start Coding! 👨‍💻</Step>
 				</Steps>
+				<NextLink href={"/data-flow-example"}>View Data Flow Example</NextLink>
 			</Wrapper>
 		</>
 	);
@@ -26,6 +29,13 @@ const Home: NextPage = () => {
 
 const Wrapper = styled.div`
 	padding: 3rem;
+
+	& a {
+		color: dodgerblue;
+		padding: 1rem;
+		background: #1da1f216;
+		border-radius: 0.5rem;
+	}
 `;
 const Heading = styled.h1`
 	color: var(--color-primary);
@@ -37,12 +47,5 @@ const Steps = styled.ul`
 	gap: 1rem;
 `;
 const Step = styled.li``;
-
-const FilePath = styled.span`
-	padding: 0.25rem 0.5rem;
-	border-radius: 5px;
-	background: #262626;
-	color: white;
-`;
 
 export default Home;
