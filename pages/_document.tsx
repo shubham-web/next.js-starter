@@ -26,12 +26,12 @@ export default function Document() {
 				<meta name="twitter:creator" content={social.twitter} />
 
 				{/* Facebook */}
-				<meta name="og:title" content={siteTitle} />
-				<meta name="og:site_name" content={siteTitle} />
-				<meta name="og:description" content={description} />
-				<meta name="og:url" content={new URL(domain).origin} />
-				<meta name="og:image" content={new URL(domain).origin.concat("/card.png")} />
-				<meta name="og:type" content="website" />
+				<meta property="og:title" content={siteTitle} />
+				<meta property="og:site_name" content={siteTitle} />
+				<meta property="og:description" content={description} />
+				<meta property="og:url" content={new URL(domain).origin} />
+				<meta property="og:image" content={new URL(domain).origin.concat("/card.png")} />
+				<meta property="og:type" content="website" />
 
 				{/* Fonts */}
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
